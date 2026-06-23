@@ -21,20 +21,11 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": {
-					"value": "@dataset().p_filename",
-					"type": "Expression"
-				},
-				"folderPath": {
-					"value": "@dataset().p_folder",
-					"type": "Expression"
-				},
-				"fileSystem": {
-					"value": "@dataset().p_container",
-					"type": "Expression"
-				}
+				"fileName": "cdc.json",
+				"folderPath": "CDC",
+				"fileSystem": "bronze"
 			},
-			"compressionCodec": "snappy"
+			"compressionCodec": "none"
 		},
 		"schema": []
 	}
