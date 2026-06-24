@@ -117,6 +117,7 @@
 						"referenceName": "DS_datalake",
 						"type": "DatasetReference",
 						"parameters": {
+							"container_name": "bronze",
 							"file_name": {
 								"value": "@pipeline().parameters.table",
 								"type": "Expression"
